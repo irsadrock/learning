@@ -1,0 +1,271 @@
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #f1f1f1;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*navigation bar css*/
+.nav-container {
+	background-color: black; overflow: auto;
+}
+.nav-container > .menuitem {
+float: right;
+}
+.nav-container > .logobox {
+float: left;
+}
+.nav-container a{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 21px;
+	text-decoration: none;
+}.nav-container a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.nav-container a.active{
+background-color: #04AA6D;color: #f2f2f2;
+}
+
+
+/*home page css*/
+header {
+height: calc(100vh - 48px);	
+background-image: url('./images/london2.jpg');
+display: flex;
+align-items: center;
+justify-content: center;
+}
+header .formbox {
+	background-color: white;
+	max-width: 700px;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.black-container{
+	background-color: black;
+	overflow: auto;
+	display: flex;
+}
+.black-container a{
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 18px;
+	text-decoration: none;
+}
+.black-container a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.black-container a.active{
+background-color: red;
+color: #f2f2f2;
+}
+.home-form{
+	padding: 16px;
+}
+.form-half{
+	width: 49%;
+	float: left;
+	margin-right: 1%;
+	overflow: auto;
+}
+.home-button{
+	color: #fff;
+    background-color: #616161;
+    border: none;
+    display: inline-block;
+    padding: 12px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.home-button:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+/*contact page css*/
+section {
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 16px;
+}
+section .heading{
+	padding: 10px 0;
+}
+section .address-detail{
+	margin-top: 15px;
+}
+section .address-detail p{
+	margin-bottom: 5px;
+}
+
+section .address-detail span{
+	font-size: 14px;
+}
+
+.two {
+	color: black;
+}
+input {
+	margin-top: 15px;
+	padding: 15px;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #dddddd;
+}
+.button {
+	background-color:black; 
+	color:white;
+	margin-top: 15px;
+	padding: 15px 21px;
+	border: none;
+}
+.button:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/*news page css*/
+div>h3{
+	margin-bottom: 20px;
+	font-size: 21px;
+	color: #4c4c4c;
+}
+.explore{
+	margin-top: 15px;
+	margin-bottom: 12px;
+    background-color: #f1f1f1
+	padding: 0.01em 16px;
+}
+.aus{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 15px;
+    line-height: 1.5;	
+    overflow: auto;		
+}
+div.news {
+margin-bottom: 45px;
+margin-top: 45px;
+padding: 16px;
+}
+.img-container{
+	background-color: white;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.img-container > div {
+	padding: 14px;
+}
+
+.buy-tickets{
+    background-color:white; 
+	color:black;
+	margin-top: 15px;
+	padding: 15px 21px;
+	border: none;
+	cursor: pointer;
+}
+.buy-tickets:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+/*about page css*/
+.margin{
+	margin: 11px;
+}
+.margin > h3 {
+	font-weight: 300;
+}
+
+.main-container > div, .child-container > div {
+	width: 100%;	
+	overflow: hidden;
+	position: relative;
+}
+
+
+.main-container img {
+	width: 100%;
+	height: 100%;
+}
+/*image name*/
+.main-container span {
+position: absolute;
+bottom: 18px;
+left: 18px;
+color: white;
+}
+
+
+
+/*footer css*/
+footer.one {
+	text-align: center;
+	margin-top: 30px;
+}
+.socialicon {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/*mobile phone css*/
+@media only screen and (min-width: 720px) {
+.home-form {padding: 33px;}
+
+/*media-news*/
+.img-container{
+	background-color: white;
+	float: left;
+    width: 49%;
+}
+.aus .img-container:nth-child(1){
+	margin-right: 2%;
+}
+
+/*media-contact*/
+section {
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 16px;
+}
+section .heading{
+	padding: 25px 0;
+}
+section .address-detail{
+	margin-top: 25px;
+}
+/*media-about*/
+.d-flex {display: flex;}
+.main-container > div, .child-container > div {
+	width: 50%;
+	padding: 10px;
+}
+.child-container {
+	flex-wrap: wrap;
+    margin: -10px;}
+}
+
+
+
+
